@@ -1,0 +1,19 @@
+{
+  "name": "playwright-cert-e2e",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0"
+  },
+  "dependencies": {
+    "asn1js": "^2.1.3",
+    "pkijs": "^3.4.0",
+    "pvutils": "^1.1.3"
+  }
+}
