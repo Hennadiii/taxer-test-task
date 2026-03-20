@@ -34,7 +34,8 @@ playwright-cert-e2e/
 ├── package-lock.json
 ├── package.json
 ├── playwright.config.ts
-└── tsconfig.json                              
+└── tsconfig.json     
+
 ```
 
 ---
@@ -84,15 +85,28 @@ npm run test:headed
 
 # Режим дебагу (крок за кроком)
 npm run test:debug
+```
 
-# Один конкретний файл
+Запустити один конкретний файл — використовуй унікальну частину імені (кирилиця та спецсимволи в `--grep` можуть не спрацювати):
+
+```bash
+# Латинські імена — повністю або частково
 npx playwright test --grep "cert.cer"
+npx playwright test --grep "privat"
+npx playwright test --grep "idd"
+
+# Кириличні імена — використовуй унікальний числовий суфікс
+npx playwright test --grep "8101900"
+npx playwright test --grep "8101916"
 ```
 
 ### 5. Переглянути HTML звіт
 
 ```bash
 npm run report
+
+# Якщо порт 9323 зайнятий — вказати інший
+npx playwright show-report --port 9324
 ```
 
 ---
